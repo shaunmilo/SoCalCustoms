@@ -175,3 +175,135 @@ li {
 	background-color: #c70101;
 	color: #ffffff;
 	}
+	
+	
+/* ----------------- Layerslider CSS only ---------------------- */	
+.plus1 {
+	color: #FF0004;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	font-size: 27px;
+	line-height: 27px;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	position: absolute;
+	margin: 0px;
+	background-color: rgba(0,0,0,0.90);
+}
+.text1{
+	color: black;
+   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+	font-size: 30px;
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	position: absolute;
+	line-height: normal;
+	margin: 0px;
+}
+.text2{
+	font-size: 80px;
+	color: black;
+   -webkit-text-fill-color: red; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: black;
+	font-family: 'BadManners';
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	position: absolute;
+	line-height: normal;
+	margin: 0px;
+}
+.text3 a{
+	text-decoration: none;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: 1px;
+	outline: 2px;
+	outline-color:rgba(0,0,0,1.00)
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	color: #FFFFFF;
+	font-size: 28px;
+	line-height: normal;
+}
+.black {
+	padding: 0 10px;
+	background: rgba(0, 0, 0, .80);
+	color: red;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	outline: 0;
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	line-height: 70px;
+	font-size: 40px;
+	position: absolute;
+	margin: 0px;
+}
+.text-a{
+	background-color: rgba(0,0,0,0.89);
+	border-radius: 5px;
+	padding: 5px 15px;
+	font-size: 30px;
+	color: #FF0004;
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	position: absolute;
+	line-height: normal;
+	margin: 0px;
+}
+.text-b{
+	padding: 10px 20px;
+	font-size: 40px;
+	color: #FF0004;
+	background-color: rgba(0,0,0,0.89);
+	border-radius: 5px;
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	position: absolute;
+	line-height: normal;
+	margin: 0px;
+}
+.text-c{
+	background-color: rgba(0,0,0,0.85);
+	box-shadow: -3px -3px 20px -3px black;
+	border-radius: 5px;
+	padding: 15px 30px 15px 30px;
+	font-size: 60px;
+	color: #FF0004;
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	position: absolute;
+	line-height: normal;
+	margin: 0px;
+}
+.text-d{
+	font-size: 90px;
+	color: black;
+   -webkit-text-fill-color: red; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: black;
+	font-family: 'BadManners';
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	position: absolute;
+	line-height: normal;
+	margin: 0px;	
+}
