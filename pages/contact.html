@@ -5,6 +5,24 @@
 <title>SoCal Customs - Contact</title>
 <link rel="stylesheet" href="../css/rwdgrid.css">
 <link rel="stylesheet" href="../css/style.css">
+<script src="../js/spam.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+      function showEM(userName, emServer) {
+          /*
+            The showEM() function displays a link to the user's e-mail address.
+            The text of the user and e-mail server names are entered in reverse order to thwart e-mail harvesters.
+          */
+          
+          userName = stringReverse(userName); // reverse the text of the userName parameter
+          emServer = stringReverse(emServer); // reverse the text of the emServer parameter
+          
+          var emLink = userName + "@" + emServer; // combine the text of userName and emServer
+          document.write("<a href='mailto:" + emLink + "'>");
+          document.write(emLink);
+          document.write("</a>");
+      }
+      </script>
 
 <style>
     input, textarea {
@@ -30,6 +48,22 @@
         border-color: black;
         padding: 3em;
     }
+
+    img{
+        margin-left: 60px;
+    }
+
+    a:hover {
+            background: #db0d0d; /* Old browsers */
+            background: -moz-linear-gradient(top, #db0d0d 0%, #cb0101 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db0d0d), color-stop(100%,#cb0101)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #db0d0d 0%,#cb0101 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #db0d0d 0%,#cb0101 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #db0d0d 0%,#cb0101 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #db0d0d 0%,#cb0101 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0d0d', endColorstr='#cb0101',GradientType=0 ); /* IE6-9 */
+        }
+    }
 </style>
 </head>
 
@@ -47,7 +81,7 @@
             </ul>
         </div>
         <div class="grid-12">
-            <img src="http://placehold.it/1150x150"/>
+            <img src="../img/contact_page_banner.png" alt="Lowrider Truck"/>
         </div>
         <div class="grid-8 content-box">
             <h1>Contact Us</h1>
@@ -59,26 +93,29 @@
                 <input class="input_info" type="text" placeholder="Email">
                 <br />
                 <br />
-                <textarea type="text" placeholder="Questions/Comments"></textarea><br />
-                <input type="submit" value="Send Your Message">
+                <textarea type="text" placeholder="Questions/Comments"></textarea><br /><br />
+                <input class="button-gray" type="submit" value="Send Your Message">
             </form>
         </div>
         <div class="grid-4" id="contact_info">
             <fieldset>
             <legend><h2>Contact Information</h2></legend>
-            <br />
-            <br />
-            <br />
-            <ul>
-                <li>SoCal Customs, Inc.</li>
-                <li>Address</li>
-                <li>City, State, Zip</li>
-                <li>P: 123.456.7890</li>
+            
+            <ul style="color: #ffffff;">
+                <li>SoCalCustoms.com</li>
+                <br />
+                <li>PO Box 17314</li>
+                <br />
+                <li>Anaheim, CA 92817</li>
                 <br />
                 <br />
                 <li><strong>Email</strong></li>
                 <br />
-                <li>first.last@gmail.com</li>
+                <li>
+                    <script type="text/javascript">
+                        showEM("retsambew","moc.smotsuclacos");
+                    </script>
+                </li>
             </ul>
             </fieldset>
         </div>

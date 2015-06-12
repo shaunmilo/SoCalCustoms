@@ -46,11 +46,11 @@ h1 {
 h1:after {
   content: "";
   display: block;
-  width: 77%;
+  width: 75%;
   background: #c70101;
   height: 7px;
   position: absolute;
-  left: 23%;
+  left: 26%;
   top: 50%;
   margin: 0;
 }
