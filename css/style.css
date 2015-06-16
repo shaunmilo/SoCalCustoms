@@ -80,6 +80,10 @@ li {
     display: inline;
 }
 
+.about{
+	text-indent: 50px;
+	}
+
 /* ----------------- Global CSS/Layout Classes ---------------------- */	
 
 .button-red {
