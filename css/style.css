@@ -91,6 +91,10 @@ a:hover {
 	color: #d90303;
 }
 
+.about{
+	text-indent: 50px;
+	}
+
 /* ----------------- Global CSS/Layout Classes ---------------------- */	
 
 a.button-red {
@@ -275,7 +279,7 @@ input[type=reset]:hover {
     border-color: #fff;
 }
 
-footer {
+footer{
 	background: #99040c; /* Old browsers */
 	background: -moz-linear-gradient(top, #99040c 0%, #99040c 0%, #99040c 0%, #9b0000 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99040c), color-stop(0%,#99040c), color-stop(0%,#99040c), color-stop(100%,#9b0000)); /* Chrome,Safari4+ */
@@ -287,7 +291,29 @@ footer {
 	color: #fff;
 	margin: 1em 0 0;
 }
-	
+
+.footerNav{
+	margin-top: 15px;
+	text-align:right;
+	}
+
+.footerNav a{
+	color: #FFFFFF;
+	text-decoration:none;
+	padding: 10px;
+	transition: .2s ease;
+	}
+
+.footerNav a:hover {
+	background: #8d0000;
+	border-radius: 7px;
+	}
+
+.imgCenter{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}	
 	
 /* ----------------- Layerslider CSS only ---------------------- */	
 .plus1 {
