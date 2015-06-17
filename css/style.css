@@ -43,18 +43,19 @@ h1 {
 	width: 100%;
 	display: inline-block;
 	text-transform: uppercase;
+	overflow: hidden;
 }
 
 h1:after {
   content: "";
-  display: block;
-  width: 75%;
-  background: #c70101;
-  height: 5px;
+  display: inline-block;
+  width: 100%;
   position: absolute;
-  left: 26%;
   top: 50%;
   margin: 0;
+  border: 2px solid #c70101;
+  float: right;
+  margin: 0 0 0 10px;
 }
 
 h2 {
