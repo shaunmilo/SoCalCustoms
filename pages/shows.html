@@ -5,16 +5,29 @@
 <title>SoCal Customs - Shows</title>
 <link rel="stylesheet" href="../css/rwdgrid.css">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/mobile.css">
+
+<!-- JQuery Files -->
+<script src="../layerslider/js/jquery.js" type="text/javascript"></script>
+<script src="../js/jquery.slicknav.js"></script>
 
 <!-- Main JS file -->
 <script src="../js/script.js" type="text/javascript"></script>
+
+<script>
+
+        $(function(){
+        $('#menu').slicknav();
+    });
+
+</script>
 </head>
 
 <body class="shows">
-    <nav>
+    <nav class="nav">
         <div class="container">
             <div class="grid-12 nav">
-                <ul>
+                <ul id="menu">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="features.html">Features</a></li>

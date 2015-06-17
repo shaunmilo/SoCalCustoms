@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>SoCal Customs</title>
+
+
 <link rel="stylesheet" href="css/rwdgrid.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mobile.css">
 
 <!-- LayerSlider stylesheet -->
 <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
@@ -12,21 +15,32 @@
 <!-- External libraries: jQuery & GreenSock -->
 <script src="layerslider/js/jquery.js" type="text/javascript"></script>
 <script src="layerslider/js/greensock.js" type="text/javascript"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+
     
 <!-- LayerSlider script files -->
 <script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
 <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
 
+
 <!-- Main JS file -->
 <script src="../js/script.js" type="text/javascript"></script>
 
+
+<script>
+
+        $(function(){
+        $('#menu').slicknav();
+    });
+
+</script>
 </head>
 
 <body class="home">
-    <nav>
+    <nav class="nav">
         <div class="container">
         	<div class="grid-12 nav">
-                <ul>
+                <ul id="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pages/features.html">Features</a></li>
                     <li><a href="pages/shows.html">Shows</a></li>
@@ -121,7 +135,7 @@
     </div>
     <div class="section-bg">
         <div class="container">
-            <h1>About SoCal Customs</h1>
+            <h1 id="about_socal">About SoCal Customs</h1>
             <div class="grid-8">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ipsum, assumenda esse dolore recusandae aliquam natus nam? Aspernatur, perspiciatis, dicta distinctio consectetur, sequi accusamus reiciendis non similique neque aliquid fugiat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium repudiandae delectus incidunt voluptatum eum deleniti quisquam blanditiis optio voluptates iusto, id maiores ipsam laudantium, eaque. Odio, labore recusandae expedita pariatur!</p>
