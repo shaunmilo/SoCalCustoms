@@ -338,9 +338,6 @@ footer{
 }
 .text1{
 	color: black;
-   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
 	font-size: 30px;
 	white-space: nowrap;
 	font-weight: normal;
@@ -352,9 +349,6 @@ footer{
 .text2{
 	font-size: 80px;
 	color: black;
-   -webkit-text-fill-color: red; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 3px;
-   -webkit-text-stroke-color: black;
 	font-family: 'BadManners';
 	white-space: nowrap;
 	font-weight: normal;
@@ -364,17 +358,32 @@ footer{
 	margin: 0px;
 }
 .text3 a{
-	text-decoration: none;
-	outline: 5px auto -webkit-focus-ring-color;
+	text-decoration:underline;
 	outline-offset: 1px;
-	outline: 2px;
-	outline-color:rgba(0,0,0,1.00)
+	outline-color:rgba(0,0,0,1.00);
 	white-space: nowrap;
 	font-weight: normal;
 	text-shadow: none;
 	color: #FFFFFF;
-	font-size: 28px;
+	font-size: 36px;
 	line-height: normal;
+}
+.text3 a:hover{
+	text-shadow: 0px 0px;
+	color: rgba(70,70,70,1.00);
+	font-size: 38px;
+}
+.text4{
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: 1px;
+	outline: 2px;
+	outline-color:rgba(0,0,0,1.00);
+	white-space: nowrap;
+	font-weight: normal;
+	text-shadow: none;
+	color: #FFFFFF;
+	font-size: 36px;
+	line-height: normal;	
 }
 .black {
 	padding: 0 10px;
@@ -435,12 +444,8 @@ footer{
 	margin: 0px;
 }
 .text-d{
-	font-size: 90px;
+	font-size: 60px;
 	color: black;
-   -webkit-text-fill-color: red; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 3px;
-   -webkit-text-stroke-color: black;
-	font-family: 'BadManners';
 	white-space: nowrap;
 	font-weight: normal;
 	text-shadow: none;
@@ -476,5 +481,3 @@ footer{
 	.banner-mobile {
 		display: block;
 	}
-
-}
