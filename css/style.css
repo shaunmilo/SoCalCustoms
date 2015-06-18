@@ -79,6 +79,60 @@ ul {
 li {
     display: inline-block;
 }
+.iconContainer .icons li {
+	position: relative;
+	margin: 10px;
+	line-height: 50px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+}
+.icons li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.icons li a {
+	color: rgba(255,255,255,1.00);
+}
+.icons li a:hover  {
+	color: rgba(51,0,0,1.00);
+}
+.home .iconContainer {
+	position: relative;
+	z-index: 1;
+}
+
+
+.icons li a:hover {
+	background-color: #B40000;
+	background-image: -webkit-linear-gradient(270deg,rgba(175,23,23,1.00) 0%,rgba(123,19,19,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(175,23,23,1.00) 0%,rgba(123,19,19,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(175,23,23,1.00) 0%,rgba(123,19,19,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(175,23,23,1.00) 0%,rgba(123,19,19,1.00) 100%);
+}
+
+.iconContainer .icons li a {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto 0 auto;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	background-image: -webkit-linear-gradient(270deg,rgba(204,0,0,1.00) 0%,rgba(112,0,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(204,0,0,1.00) 0%,rgba(112,0,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(204,0,0,1.00) 0%,rgba(112,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(204,0,0,1.00) 0%,rgba(112,0,0,1.00) 100%);
+}
 
 img {
 	max-width: 100%;
@@ -89,7 +143,7 @@ a:link, a:active, a:visited {
 }
 
 a:hover {
-	color: #d90303;
+	color: #ED0000;
 }
 
 .aboutText{
@@ -350,6 +404,10 @@ footer{
 	}	
 	
 /* ----------------- Layerslider CSS only ---------------------- */	
+#full-slider-wrapper{
+	z-index:0;
+	position:relative;	
+}
 .plus1 {
 	color: #FF0004;
 	text-align: center;
