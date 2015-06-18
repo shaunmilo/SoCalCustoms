@@ -92,6 +92,16 @@ a:hover {
 	color: #d90303;
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+.aboutText{
+	text-indent: 50px;
+	}
+
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
 /* ----------------- Global CSS/Layout Classes ---------------------- */	
 
 a.button-red {
@@ -220,6 +230,7 @@ nav{
 }
 
 .banner {
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	border-bottom: 7px solid #414040;
@@ -229,6 +240,25 @@ nav{
 	display: none;
 	border-bottom: 7px solid #414040;
 }
+
+.icons{
+	position:relative;
+	top:-15px;
+	width: 10%;
+	display:block;
+	margin: 0 auto;
+	}
+.icons img{
+	height:auto;
+	width: auto;
+	}
+
+.iconContainer{
+	margin:0;
+	padding:0;
+	background-color:#414040;
+	height: 5px;}
+
 
 .section-bg {
 	background-image: url(../img/section-bg.png);
