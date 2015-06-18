@@ -96,7 +96,7 @@ a:hover {
 .aboutText{
 	text-indent: 50px;
 	}
-
+	
 /* ----------------- Global CSS/Layout Classes ---------------------- */	
 
 a.button-red {
@@ -210,6 +210,7 @@ nav{
 	box-shadow: 0px 0px 1px rgba(0,0,0,0.8);
 	padding: 10px 0;
 	}
+	
 .nav a{
 	font-family: "AeroMatics";
 	font-size:24px;
@@ -219,6 +220,7 @@ nav{
 	padding: 5px 10px;
 	transition: .2s ease;
 	}
+	
 .nav a:hover {
 	background: #8d0000;
 	border-radius: 7px;
@@ -236,24 +238,23 @@ nav{
 	border-bottom: 7px solid #414040;
 }
 
-.icons{
-	position:relative;
-	top:-15px;
-	width: 10%;
-	display:block;
-	margin: 0 auto;
-	}
-.icons img{
-	height:auto;
-	width: auto;
-	}
-
 .iconContainer{
-	margin:0;
-	padding:0;
-	background-color:#414040;
-	height: 5px;}
+	position:relative;
+	top: -30px;
+	text-align: center;
+	}
 
+.iconContainer img{
+	max-width:initial;
+	height:auto;
+	padding: 5px;
+	position:relative;
+	width:auto;
+	}
+
+.iconContainer a{
+	width: 20px;
+	}
 
 .section-bg {
 	background-image: url(../img/section-bg.png);
