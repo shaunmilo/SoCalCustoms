@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="SoCal Customs, Car Show Event Coverage &amp; Photography">
-<meta name="viewport" content="width=device-width, user-scalable=no">
 <title>SoCal Customs</title>
+
 <link rel="stylesheet" href="css/rwdgrid.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/mobile.css">
 
 <!-- LayerSlider stylesheet -->
 <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
@@ -14,28 +14,38 @@
 <!-- External libraries: jQuery & GreenSock -->
 <script src="layerslider/js/jquery.js" type="text/javascript"></script>
 <script src="layerslider/js/greensock.js" type="text/javascript"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+
     
 <!-- LayerSlider script files -->
 <script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
 <script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
 
+
 <!-- Main JS file -->
 <script src="../js/script.js" type="text/javascript"></script>
 
+
+<script>
+
+        $(function(){
+        $('#menu').slicknav();
+    });
+
+</script>
 </head>
 
 <body class="home">
-    
-    <nav>
+    <nav class="nav">
         <div class="container">
         	<div class="grid-12 nav">
-                <ul>
+                <ul id="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
                     <li><a href="pages/features.html">Features</a></li>
                     <li><a href="pages/shows.html">Shows</a></li>
                     <li><a href="pages/models.html">Models</a></li>
                     <li><a href="pages/downloads.html">Downloads</a></li>
+                    <li><a href="pages/about.html">About</a></li>
                     <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -55,7 +65,24 @@
                     <h5 class="ls-s-1 text4" style="top:20%; left: 65%; slidedirection : bottom; slideoutdirection : bottom; durationin : 1000; durationout : 750; easingin : easeOutQuint; delayin : 1500; "> Beatiful Cars </h5>
                     <h5 class="ls-s-1 text4" style="top:30%; left: 70%; slidedirection : bottom; slideoutdirection : bottom; durationin : 1000; durationout : 750; easingin : easeOutQuint; delayin : 3000; "> Beatiful Models </h5>
                     <h5 class="ls-s-1 text4" style="top:40%; left: 75%; slidedirection : bottom; slideoutdirection : bottom; durationin : 1000; durationout : 750; easingin : easeOutQuint; delayin : 4500; "> And More... </h5>
+                    </div>
+                    
+   <!-- Slide 2 Begin -->    
+                    
+                <div class="ls-layer" style="slidedelay: 7000; transition2d: all; transition3d:all;"> <img src="layerslider/gallery/bg2.jpg" class="ls-bg" alt="Slide background"> 
+                	<p class="ls-l" style="top:0px;left:975px;font-weight: 400;height:70px;padding-right:10px;padding-left:10px;font-size:50px;line-height:50px;color:rgba(252,1,5,1.00);background:rgba(0,0,0,0.80);border-radius:10px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;">
+					RECENT SHOWS
+				</p>
+                    <h5 class="ls-s-1 text3" style="top:70px; left: 1000px; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 800; scaleout : .8;"><a href="#">
+                    
+<!-- List a recent show and link the page here -->                     
+<a href="#"> Relaxin' in SoCal </a></h5>
+ 
+                    <h5 class="ls-s-1 text3" style="top:120px; left: 1000px; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 1300; scaleout : .8;"><a href="#">
 
+<!-- List a recent show and link the page here -->                     
+<a href="#"> Lonestar Throwdown </a></h5>
+                    <h5 class="ls-s-1 text3" style="top:170px; left: 1000px; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 1800; scaleout : .8;">
         	</div>
         </div>
     </div>
@@ -76,14 +103,14 @@
     </div>
     <div class="section-bg">
         <div class="container">
-            <h1>About SoCal Customs</h1>
+            <h1 id="about_socal">About SoCal Customs</h1>
             <div class="grid-8">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ipsum, assumenda esse dolore recusandae aliquam natus nam? Aspernatur, perspiciatis, dicta distinctio consectetur, sequi accusamus reiciendis non similique neque aliquid fugiat.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium repudiandae delectus incidunt voluptatum eum deleniti quisquam blanditiis optio voluptates iusto, id maiores ipsam laudantium, eaque. Odio, labore recusandae expedita pariatur!</p>
                 <p class="center"><a href="pages/about.html" class="button-red">Find Out More</a></p>
             </div>
             <div class="grid-4 center">
-               <img src="img/about-graphic.png" alt="" />
+               <img src="img/about-graphic.png" />
             </div>
         </div>
     </div>
@@ -97,11 +124,11 @@
                     <div class="grid-9 footerNav">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="pages/about.html">About</a></li>
                             <li><a href="pages/features.html">Features</a></li>
                             <li><a href="pages/shows.html">Shows</a></li>
                             <li><a href="pages/models.html">Models</a></li>
                             <li><a href="pages/downloads.html">Downloads</a></li>
+                            <li><a href="pages/about.html">About</a></li>
                             <li><a href="pages/contact.html">Contact</a></li>
                         </ul>
                     </div>
