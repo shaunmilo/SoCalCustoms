@@ -244,6 +244,9 @@ a.button-gray:hover {
 	float: left;
 }
 
+.hidden {
+    display: none;
+}
 /* ----------------- Page Styling ---------------------- */	
 
 .featured {
