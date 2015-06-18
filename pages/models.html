@@ -11,17 +11,14 @@
 <!-- JQuery Files -->
 <script src="../layerslider/js/jquery.js" type="text/javascript"></script>
 <script src="../js/jquery.slicknav.js"></script>
+    
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 <!-- Main JS file -->
 <script src="../js/script.js" type="text/javascript"></script>
 
-<script>
-
-        $(function(){
-        $('#menu').slicknav();
-    });
-
-</script>
 </head>
 
 <body class="models">
@@ -33,7 +30,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="features.html">Features</a></li>
                     <li><a href="shows.html">Shows</a></li>
-                    <li><a href="models.html">Models</a></li>
+                    <li><a href="models.html" class="active">Models</a></li>
                     <li><a href="downloads.html">Downloads</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -53,7 +50,10 @@
         <div class="grid-12 content-box">      
             </div>
             <div class="grid-3">
-            <img src="../img/Models/ashleyestrada.jpg" width="230" height="280">
+
+               <a class="fancybox" rel="gallery1" href="../img/Models/ashleyestrada.jpg">
+    	           <img src="../img/Models/ashleyestrada.jpg" alt="" /></a>
+                   
         </div>
         <div class="grid-3">
             <img src="../img/Models/courtneyday.jpg" width="230" height="280">
@@ -114,7 +114,7 @@
                             <li><a href="about.html">About</a></li>
                             <li><a href="features.html">Features</a></li>
                             <li><a href="shows.html">Shows</a></li>
-                            <li><a href="models.html">Models</a></li>
+                            <li><a href="models.html" class="active">Models</a></li>
                             <li><a href="downloads.html">Downloads</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>

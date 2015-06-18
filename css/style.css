@@ -38,13 +38,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 	font-size: 40px;
-	display: inline-block;
 	position: relative;
 	width: 100%;
 	display: inline-block;
 	text-transform: uppercase;
 	overflow: hidden;
-	margin: 20px 0;
+	margin: -10px 0 20px;
 }
 
 h1:after {
@@ -96,7 +95,7 @@ a:hover {
 .aboutText{
 	text-indent: 50px;
 	}
-	
+
 /* ----------------- Global CSS/Layout Classes ---------------------- */	
 
 a.button-red {
@@ -211,19 +210,29 @@ nav{
 	padding: 10px 0;
 	}
 	
-.nav a{
+nav a, nav a:active, nav a:visited{
 	font-family: "AeroMatics";
 	font-size:24px;
-	color: #FFFFFF;
+	color: #fff;
 	text-decoration:none;
 	margin: 20px 36px;
 	padding: 5px 10px;
 	transition: .2s ease;
 	}
 	
-.nav a:hover {
+nav a:hover {
 	background: #8d0000;
 	border-radius: 7px;
+}
+
+nav .active, footer .active {
+	background: #8d0000;
+	color: #fff;
+	border-radius: 7px;
+}
+
+.home h1 {
+	margin: 20px 0;
 }
 
 .banner {
