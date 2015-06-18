@@ -16,12 +16,12 @@ body {
 
 @font-face {
 	font-family: "AeroMatics";
-	src:url(../fonts/AeroMaticsDisplayRegular.ttf);
-}
+	src:url(../fonts/aeromaticsdisplayregular-webfont.ttf);
+        }
 
 @font-face {
 	font-family: "OpenSansReg";
-	src:url(../fonts/OpenSans-Regular.ttf);
+	src:url(../fonts/opensans-regular-webfont.ttf);
 }
 
 p {
