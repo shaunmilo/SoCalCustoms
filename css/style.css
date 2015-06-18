@@ -249,11 +249,7 @@ nav{
 	height:auto;
 	padding: 5px;
 	position:relative;
-	width:auto;
-	}
-
-.iconContainer a{
-	width: 20px;
+	z-index: 2;
 	}
 
 .section-bg {
