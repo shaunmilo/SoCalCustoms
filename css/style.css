@@ -245,15 +245,11 @@ nav{
 	}
 
 .iconContainer img{
+	position:relative;
+	z-index: 2;
 	max-width:initial;
 	height:auto;
 	padding: 5px;
-	position:relative;
-	width:auto;
-	}
-
-.iconContainer a{
-	width: 20px;
 	}
 
 .section-bg {
@@ -479,6 +475,10 @@ footer{
 	line-height: normal;
 	margin: 0px;	
 }
+
+#full-slider-wrapper{
+	border-bottom: 7px solid #414040;
+	}
 
 /* ----------------- Responsive Media Queries ---------------------- */	
 
