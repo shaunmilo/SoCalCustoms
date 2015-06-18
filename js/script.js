@@ -14,3 +14,14 @@
       document.write(emLink);
       document.write("</a>");
   }
+
+  $(document).ready(function() {
+
+    $(".fancybox").fancybox();
+
+    $(function(){
+        $('#menu').slicknav();
+    });
+
+
+  })
