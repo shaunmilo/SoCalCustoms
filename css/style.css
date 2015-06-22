@@ -79,6 +79,7 @@ ul {
 li {
     display: inline-block;
 }
+
 .iconContainer .icons li {
 	position: relative;
 	margin: 10px;
@@ -261,6 +262,8 @@ nav{
 	background: -o-linear-gradient(top, #890000 0%,#be0000 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #890000 0%,#be0000 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #890000 0%,#be0000 100%); /* W3C */
+
+
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#890000', endColorstr='#be0000',GradientType=0 ); /* IE6-9 */
 	width: 100%;
 	box-shadow: 0px 0px 1px rgba(0,0,0,0.8);
@@ -579,17 +582,6 @@ footer{
 		.nav{
 		display:none;	
 	}
-	.mobile-nav{
-		display: inline-block;
-	}
-	.container > .dropdown {
-  		margin:10px;
-  		vertical-align: top;
-	}
-
-.dropdown {
-	display: inline-block;
-}
 }
 @media only screen and (max-width: 1200px) { 
 	.nav{
@@ -602,6 +594,9 @@ footer{
   		margin:10px;
   		vertical-align: top;
 	}
+	.container .dropdown #mobile-nav {
+font-family: "AeroMatics";
+}
 
 .dropdown {
 	display: inline-block;
@@ -643,7 +638,7 @@ footer{
 	padding: 6px 8px 6px 10px;
 	height: 28px;
 	line-height: 14px;
-	font-size: 16px;
+	font-size: 20px;
 	color: #FFFFFF;
 	text-shadow: 1px 2px 1px rgba(83,0,1,1.00);
 	border: 0;
@@ -661,6 +656,7 @@ footer{
 	text-shadow: 1px 2px 1px rgba(154,0,2,1.00);
 }
 .dropdown-select > option {
+  font-family: "AeroMatics";
   margin: 3px;
   padding: 6px 8px;
   text-shadow: none;
