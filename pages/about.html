@@ -17,10 +17,34 @@
 
 <!-- Main JS file -->
 <script src="../js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
 
+document.getElementById('mobile-nav').options[0].text = 'About';
+
+$('#mobile-nav').on('change', function () {
+
+    //redirect the user to the value of the select element
+    window.location = this.value;
+});
+</script>
 </head>
 
 <body class="about">
+	<div class="mobile-nav">
+    	<div class="container">
+        	<div class="dropdown">
+    		<select name="navigation" id="mobile-nav" class="dropdown-select">
+          		<option value="../index.html">Home</option>
+          		<option value="about.html">About</option>
+          		<option value="features.html">Features</option>
+          		<option value="shows.html">Shows</option>
+          		<option value="models.html">Models</option>
+          		<option value="downloads.html">Downloads</option>
+          		<option value="contact.html">Contact</option>
+        	</select>
+			</div>
+        </div>
+	</div>
     <nav class="nav">
         <div class="container">
             <div class="grid-12 nav">

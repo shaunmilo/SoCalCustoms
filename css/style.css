@@ -573,8 +573,23 @@ footer{
 	}
 
 	.banner-mobile {
-		display: block;
+	display: inline-block;
+	position: relative;
 	}
+		.nav{
+		display:none;	
+	}
+	.mobile-nav{
+		display: inline-block;
+	}
+	.container > .dropdown {
+  		margin:10px;
+  		vertical-align: top;
+	}
+
+.dropdown {
+	display: inline-block;
+}
 }
 @media only screen and (max-width: 1200px) { 
 	.nav{
