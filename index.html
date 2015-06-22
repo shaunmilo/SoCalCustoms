@@ -13,24 +13,24 @@
 <link rel="stylesheet" href="css/animate.css">
 <!-- LayerSlider stylesheet -->
 <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
- 
-<!-- External libraries: jQuery & GreenSock -->
-<script src="layerslider/js/jquery.js" type="text/javascript"></script>
-<script src="layerslider/js/greensock.js" type="text/javascript"></script>
-<script src="js/jquery.slicknav.js"></script>
-
-    
-<!-- LayerSlider script files -->
-<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
-<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
-
-
-<!-- Main JS file -->
-<script src="../js/script.js" type="text/javascript"></script>
 
 </head>
-
-<body class="home">
+<body>
+	<div class="mobile-nav nav">
+    	<div class="container">
+        	<div class="dropdown">
+    		<select name="navigation" id="mobile-nav" class="dropdown-select">
+          		<option value="index.html" class="active">Home</option>
+          		<option value="pages/about.html">About</option>
+          		<option value="pages/features.html">Features</option>
+          		<option value="pages/shows.html">Shows</option>
+          		<option value="pages/models.html">Models</option>
+          		<option value="pages/downloads.html">Downloads</option>
+          		<option value="pages/contact.html">Contact</option>
+        	</select>
+		</div>
+        </div>
+	</div>
     <nav class="nav">
         <div class="container">
         	<div class="grid-12 nav">
@@ -46,14 +46,23 @@
             </div>
         </div>
     </nav>
-
+    
+<!-- Banner for mobile - hidden until someone is on a mobile display -->
+    
     <div class="banner-mobile">
         <img src="img/banner-mobile.jpg" width="100%" height="auto" />
     </div>
 
+<!-- Layerslider Begin - hidden when someone is on a mobile display -->
+	
     <div id="full-slider-wrapper" class="banner">
 		<div id="layerslider" style="width: 100%; height: 430px;">
-			<div class="ls-layer" style="slidedelay: 7000; transition2d: all; transition3d:all; "> <img src="layerslider/gallery/bg1.jpg" class="ls-bg" alt="Slide background"><img class="ls-l" style="top:100px;left:800px;white-space: nowrap;" data-ls="offsetxin:300; durationin:2000; offsetxout:-300; parallaxlevel:2;" src="layerslider/gallery/12.png" alt="">
+        
+        	<!-- Beginning of slide 1 -->
+			<div class="ls-layer" style="slidedelay: 7000; transition2d: all; transition3d:all; "> 
+            
+            <!-- Background image for slide 1 -->
+            <img src="layerslider/gallery/bg1.jpg" class="ls-bg" alt="Slide background"><img class="ls-l" style="top:100px;left:90%;white-space: nowrap;" data-ls="offsetxin:300; durationin:2000; offsetxout:-300; parallaxlevel:2;" src="layerslider/gallery/12.png" alt="">
                     <h5 class="ls-s1 black" style="top:203px; left: 200px; slidedirection : left; slideoutdirection : left; durationout : 750; easingin : easeOutBack; scaleout : .1;"> Custom Car Shows </h5>
                     <h5 class="ls-s1 black" style="top:263px; left: 200px; slidedirection : left; slideoutdirection : left; durationout : 750; easingin : easeOutBack; delayin : 500; scaleout : .1;"> Featured Custom Cars </h5>
                     <h5 class="ls-s1 black" style="top:323px; left: 200px; slidedirection : left; slideoutdirection : left; durationout : 750; easingin : easeOutBack; delayin : 1000; scaleout : .1;"> Featured Models </h5>
@@ -61,44 +70,54 @@
                     <h5 class="ls-s-1 text4" style="top:30%; left: 70%; slidedirection : bottom; slideoutdirection : bottom; durationin : 1000; durationout : 750; easingin : easeOutQuint; delayin : 3000; "> Beatiful Models </h5>
                     <h5 class="ls-s-1 text4" style="top:40%; left: 75%; slidedirection : bottom; slideoutdirection : bottom; durationin : 1000; durationout : 750; easingin : easeOutQuint; delayin : 4500; "> And More... </h5>
                     </div>
+                    <!-- End of slide 1 -->
+                                      
+   					<!-- Beginning of slide 2 -->    
+                	<div class="ls-layer" style="slidedelay: 7000; transition2d: all; transition3d:all;"> 
                     
-   <!-- Slide 2 Begin -->    
-                    
-                <div class="ls-layer" style="slidedelay: 7000; transition2d: all; transition3d:all;"> <img src="layerslider/gallery/bg2.jpg" class="ls-bg" alt="Slide background"> 
-                	<p class="ls-l" style="top:0px;left:975px;font-weight: 400;height:70px;padding-right:10px;padding-left:10px;font-size:50px;line-height:50px;color:rgba(252,1,5,1.00);background:rgba(0,0,0,0.80);border-radius:10px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;">
+                    <!-- Background image for slide 2 -->
+                    <img src="layerslider/gallery/bg2.jpg" class="ls-bg" alt="Slide background"> 
+                	
+                    <!-- Recent Shows Dropdown -->
+                    <p class="ls-l" style="top:0px;left:88%;font-weight: 400;height:70px;padding-right:10px;padding-left:10px;font-size:50px;line-height:50px;color:rgba(252,1,5,1.00);background:rgba(0,0,0,0.80);border-radius:10px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;">
 					RECENT SHOWS
 				</p>
-                    <h5 class="ls-s-1 text3" style="top:70px; left: 1000px; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 800; scaleout : .8;"><a href="#">
+                    <h5 class="ls-s-1 text3" style="top:70px; left: 90%; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 800; scaleout : .8;"><a href="#">
                     
 <!-- List a recent show and link the page here -->                     
 <a href="#"> Relaxin' in SoCal </a></h5>
  
-                    <h5 class="ls-s-1 text3" style="top:120px; left: 1000px; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 1300; scaleout : .8;"><a href="#">
+                    <h5 class="ls-s-1 text3" style="top:120px; left: 90%; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 1300; scaleout : .8;"><a href="#">
 
 <!-- List a recent show and link the page here -->                     
 <a href="#"> Lonestar Throwdown </a></h5>
-                    <h5 class="ls-s-1 text3" style="top:170px; left: 1000px; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 1800; scaleout : .8;">
+                    <h5 class="ls-s-1 text3" style="top:170px; left: 90%; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 1800; scaleout : .8;">
 
 <!-- List a recent show and link the page here -->                     
 <a href="#"> GNRS </a></h5>
 
-                    <h5 class="ls-s-1 text3" style="top:220px; left: 1000px; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 2300; scaleout : .8;"><a href="#">
+                    <h5 class="ls-s-1 text3" style="top:220px; left: 90%; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 2300; scaleout : .8;"><a href="#">
 
 <!-- List a recent show and link the page here -->                     
 <a href="#"> Forbidden Fantasy </a></h5>
 
-                    <h5 class="ls-s-1 text3" style="top:270px; left: 1000px; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 2800; scaleout : .8;"><a href="#">
+                    <h5 class="ls-s-1 text3" style="top:270px; left: 90%; slidedirection : fade; slideoutdirection : fade; durationout : 750; easingin : easeOutQuint; delayin : 2800; scaleout : .8;"><a href="#">
                     
 <!-- List a recent show and link the page here -->                     
 <a href="#"> CES </a></h5>
+
                     <h5 class="ls-s3 text-a" style="top: 48%; left: 30%; slidedirection : fade; slideoutdirection : right; durationin : 1500; easingout : easeInQuart; rotateout : 35; scaleout : 5; showuntil : 801;"> Custom </h5>
                     <h5 class="ls-s3 text-b" style="top:60%; left: 30%; slidedirection : fade; slideoutdirection : right; durationin : 1500; easingout : easeInQuart; delayin : 250; rotateout : 35; scaleout : 5; showuntil : 451;"> Carshow </h5>
                     <h5 class="ls-s4 text-c" style="top: 74%; left: 30%; slidedirection : fade; slideoutdirection : right; durationin : 1500; easingout : easeInQuart; delayin : 500; rotateout : 35; scaleout : 5; showuntil : 101;"> Galleries </h5>
-                    <a class="ls-s3 black" href="pages/shows.html"  style="top:300px; left: 25%; slidedirection : fade; durationin : 2000; delayin : 2500; rotateout : -90; scaleout : 0; padding:0 10px"> View Carshows </a> </div>
+                    <a class="ls-s3 black" href="pages/shows.html"  style="top:300px; left: 25%; slidedirection : fade; durationin : 2000; delayin : 2500; rotateout : -90; scaleout : 0; padding:0 10px"> View Carshows </a> 
+                 </div>
+                 <!-- End of slide 2 -->
                     
-  <!--Slide 3 begin -->                  
-                    
-                <div class="ls-layer" style="slidedelay: 7000; transition2d: all; transition3d:all; "> <img src="layerslider/gallery/bg3.jpg" class="ls-bg" alt="Slide background">
+  				<!-- beginning of slide 3 -->    
+                <div class="ls-layer" style="slidedelay: 7000; transition2d: all; transition3d:all; "> 
+                
+                	<!-- Background image for slide 3 -->
+                	<img src="layerslider/gallery/bg3.jpg" class="ls-bg" alt="Slide background">
                 	<img class="ls-s-1" src="layerslider/gallery/ashleyestrada.jpg" alt="Ashley Estrada" style="top: 50px; left: 125px; slidedirection : right; slideoutdirection : bottom; durationin : 3000; easingin : easeOutQuart; rotatein : 20; rotateout : -10; ">
                 	<img class="ls-s-1" src="layerslider/gallery/courtneyday.jpg" alt="Courtney Day" style="top: 50px; left: 325px; slidedirection : right; slideoutdirection : left; durationin : 3000; easingin : easeOutQuart; rotatein : -15; rotateout : -10; ">
                     <img class="ls-s-1" src="layerslider/gallery/danygirl.jpg" alt="Danny Girl" style="top: 50px; left: 525px; slidedirection : bottom; slideoutdirection : top; durationin : 3000; easingin : easeOutQuart; rotatein : 10; rotateout : -10; ">
@@ -115,18 +134,32 @@
                     <img class="ls-s-1" src="layerslider/gallery/donnalazarescu.jpg" alt="Donna Lazarescu" style="top: 230px; left: 1325px; slidedirection : top; slideoutdirection : right; durationin : 3000; easingin : easeOutQuart; rotatein : 15; rotateout : -10; ">
                     <a class="ls-s3 black" href="pages/models.html"  style="top:185px; left: 50%; slidedirection : fade; durationin : 2000; delayin : 2500; rotateout : -90; scaleout : 0; padding:0 10px"> Meet The Models</a>
                     </div>
+                    <!-- End of slide 3 -->   
+                    
+                    <!-- Beginning of Slide 4 -->
                     <div class="ls-slide" data-ls="transition2d:1;timeshift:-1000;">
-				<img src="layerslider/gallery/layer3.png" class="ls-bg" alt="Slide background"/><img class="ls-l" style="white-space: nowrap;" data-ls="offsetxin:300;durationin:2000;offsetxout:-300;parallaxlevel:-1;" src="layerslider/gallery/layer1.png" alt=""><img class="ls-l" style="white-space: nowrap;" data-ls="offsetxin:600;durationin:2000;offsetxout:-600;parallaxlevel:1;" src="layerslider/gallery/layer2.png" alt="">
-				<p class="ls-l" style="top:170px;left:174px;font-weight: 300;height:40px;padding-right:10px;padding-left:10px;font-size:36px;line-height:42px;color:#ffffff;background:#000000;border-radius:3px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:10;">
+						<!-- Background image for slide 4 -->
+                        <img src="layerslider/gallery/bg4.jpg" class="ls-bg" alt="Slide background"/>
+                        <!-- Paralax layer image -->
+                        <img class="ls-l" style="white-space: nowrap;" data-ls="offsetxin:300;durationin:2000;offsetxout:-300;parallaxlevel:-1;" src="layerslider/gallery/layer1.png" alt="">
+                        <!-- Paralax layer image -->
+                        <img class="ls-l" style="top:100px; white-space: nowrap;" data-ls="offsetxin:600;durationin:2000;offsetxout:-600;parallaxlevel:1;" src="layerslider/gallery/layer2.png" alt="">
+                        <!-- Paralax layer image -->
+                        <img class="ls-l" style="top:10%px; left:80%; white-space: nowrap;" data-ls="offsetxin:600;durationin:2000;offsetxout:-600;parallaxlevel:2;" src="layerslider/gallery/layer3.png" alt="">
+						<!-- Paralax layer text -->
+                        <p class="ls-l" style="top:170px;left:174px;font-weight: 300;height:40px;padding-right:10px;padding-left:10px;font-size:36px;line-height:42px;color:#ffffff;background:#000000;border-radius:3px;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutElastic;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:10;">
 					SoCal Customs Photographer
 				</p>
-				<p class="ls-l" style="top:210px;left:183px;font-size:31px;color:#000000; white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;parallaxlevel:8;">
+				<!-- Paralax layer text -->
+                <p class="ls-l" style="top:210px;left:183px;font-size:31px;color:#000000; white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:2000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% top 0;offsetxout:-400;parallaxlevel:8;">
 					Bryan Fross
 				</p>
                 <a class="ls-s3 black" href="pages/about.html"  style="top:300px; left: 75%; slidedirection : fade; durationin : 2000; delayin : 2500; rotateout : -90; scaleout : 0; padding:0 10px"> Meet Bryan </a>
 			</div>
+            <!-- End of slide 4 -->
 		</div>
 	</div>
+<!-- End of Layerslider -->
         
     <div class="iconContainer">
         <ul class="icons">
@@ -187,16 +220,33 @@
         </div> 
     </footer>
 </body>
+<!-- Javascript linked here for faster laod time --> 
+<!-- External libraries: jQuery & GreenSock -->
+<script src="layerslider/js/jquery.js" type="text/javascript"></script>
+<script src="layerslider/js/greensock.js" type="text/javascript"></script>
+<script src="js/jquery.slicknav.js"></script>
+    
+<!-- LayerSlider script files -->
+<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+<!-- Main JS file -->
+<script src="../js/script.js" type="text/javascript"></script>
+
 <script type="text/javascript">
- 
+$('#mobile-nav').on('change', function () {
+
+    //redirect the user to the value of the select element
+    window.location = this.value;
+});
     // Running the code when the document is ready
     $(document).ready(function(){
  
         // Calling LayerSlider on the target element
         $('#layerslider').layerSlider({
  
-            // Slider options goes here,
-            // please check the 'List of slider options' section in the documentation
+            // Slider options go here,
+            // please check the 'training manual' under the layerslider section for available slider options
 			autoStart: true,
             skin: 'fullwidth',
             skinsPath: '/layerslider/skins/',

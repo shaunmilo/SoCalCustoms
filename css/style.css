@@ -405,7 +405,9 @@ footer{
     margin-left: auto;
     margin-right: auto;
 	}	
-	
+.mobile-nav{
+	display:none;
+}
 /* ----------------- Layerslider CSS only ---------------------- */	
 #full-slider-wrapper{
 	z-index:0;
@@ -573,3 +575,90 @@ footer{
 	.banner-mobile {
 		display: block;
 	}
+}
+@media only screen and (max-width: 1200px) { 
+	.nav{
+		display:none;	
+	}
+	.mobile-nav{
+		display: inline-block;
+	}
+	.container > .dropdown {
+  		margin:10px;
+  		vertical-align: top;
+	}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 30px;
+	width: 100%;
+	background: rgba(255,0,4,1.00);
+	border: 1px solid;
+	border-color: black;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+	/* [disabled]padding-top: 1px; */
+}
+	.dropdown:before, .dropdown:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #000 transparent;
+  pointer-events: none;
+}
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+.dropdown-select {
+	position: relative;
+	width: 130%;
+	padding: 6px 8px 6px 10px;
+	height: 28px;
+	line-height: 14px;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-shadow: 1px 2px 1px rgba(83,0,1,1.00);
+	border: 0;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-webkit-appearance: none;
+	background-image: -webkit-linear-gradient(270deg,rgba(248,0,4,1.00) 0%,rgba(188,0,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(248,0,4,1.00) 0%,rgba(188,0,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(248,0,4,1.00) 0%,rgba(188,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(248,0,4,1.00) 0%,rgba(188,0,0,1.00) 100%);
+}
+.dropdown-select:focus {
+	width: 100%;
+	color: rgba(255,255,255,1.00);
+	text-shadow: 1px 2px 1px rgba(154,0,2,1.00);
+}
+.dropdown-select > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background:rgba(196,0,3,1.00)}
+
+/* Fix for IE 8 putting the arrows behind the select element. */
+.lt-ie9 .dropdown {
+  z-index: 1;
+}
+.lt-ie9 .dropdown-select {
+  z-index: -1;
+}
+.lt-ie9 .dropdown-select:focus {
+  z-index: 3;
+}
+}
