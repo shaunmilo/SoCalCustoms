@@ -17,29 +17,16 @@
     
 <!-- Add fancyBox -->
 <link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
-<!-- Main JS file -->
-<script src="../js/script.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-document.getElementById('mobile-nav').options[0].text = 'Models';
-
-$('#mobile-nav').on('change', function () {
-
-    //redirect the user to the value of the select element
-    window.location = this.value;
-});
-</script>
 </head>
 
 <body class="models">
-    <nav class="nav">
-    <div class="mobile-nav">
+	<div class="mobile-nav">
     	<div class="container">
         	<div class="dropdown">
     		<select name="navigation" id="mobile-nav" class="dropdown-select">
-          		<option value="../index.html">Home</option>
+          		<option value="">Where to?</option>
+                <option value="../index.html">Home</option>
           		<option value="about.html">About</option>
           		<option value="features.html">Features</option>
           		<option value="shows.html">Shows</option>
@@ -50,14 +37,15 @@ $('#mobile-nav').on('change', function () {
 			</div>
         </div>
 	</div>
+    <nav class="nav">
         <div class="container">
             <div class="grid-12 nav">
                 <ul id="menu">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="features.html">Features</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                    <li><a href="models.html" class="active">Models</a></li>
+                    <li><a href="shows.html" class="active">Shows</a></li>
+                    <li><a href="models.html">Models</a></li>
                     <li><a href="downloads.html">Downloads</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -83,46 +71,46 @@ $('#mobile-nav').on('change', function () {
     	           <img src="../img/Models/ashleyestrada.jpg" alt="" /></a>
             </div>
         <div class="grid-3">
-            <img src="../img/Models/courtneyday.jpg" width="230" height="280">
+            <img src="../img/Models/courtneyday.jpg" />
         </div>
         <div class="grid-3">
-            <img src="../img/Models/danygirl.jpg" width="230" height="280">
+            <img src="../img/Models/danygirl.jpg" />
         </div>
         <div class="grid-3">
-            <img src="../img/Models/darlenemelendez.jpg" width="230" height="280">
+            <img src="../img/Models/darlenemelendez.jpg" />
         </div>
 <div class="grid-3">
-            <img src="../img/Models/donnalazarescu.jpg" width="230" height="280">
+            <img src="../img/Models/donnalazarescu.jpg">
         </div>
         <div class="grid-3">
-            <img src="../img/Models/elizabethsterling.jpg" width="230" height="280">
+            <img src="../img/Models/elizabethsterling.jpg">
         </div>
         <div class="grid-3">
-            <img src="../img/Models/emmjaye.jpg" width="230" height="280">
+            <img src="../img/Models/emmjaye.jpg">
         </div>
         <div class="grid-3">
-            <img src="../img/Models/hollyweber.jpg" width="230" height="280">
+            <img src="../img/Models/hollyweber.jpg"/>
         </div>
 <div class="grid-3">
-            <img src="../img/Models/jennyp.jpg" width="230" height="280">
+            <img src="../img/Models/jennyp.jpg"/>
         </div>
         <div class="grid-3">
-            <img src="../img/Models/jessrockwell.jpg" width="230" height="280">
+            <img src="../img/Models/jessrockwell.jpg"/>
         </div>
         <div class="grid-3">
-            <img src="../img/Models/lenanicole.jpg" width="230" height="280">
+            <img src="../img/Models/lenanicole.jpg"/>
         </div>
         <div class="grid-3">
-            <img src="../img/Models/nicolealbright.jpg" width="230" height="280">
+            <img src="../img/Models/nicolealbright.jpg"/>
         </div>
     <div class="grid-3">
-            <img src="../img/Models/queenesther.jpg" width="230" height="280">
+            <img src="../img/Models/queenesther.jpg"/>
         </div>
         <div class="grid-3">
-            <img src="../img/Models/tabithamartinez.jpg" width="230" height="280">
+            <img src="../img/Models/tabithamartinez.jpg"/>
         </div>
         <div class="grid-3">
-            <img src="../img/Models/tiffanytoth.jpg" width="230" height="280">
+            <img src="../img/Models/tiffanytoth.jpg"/>
         </div>
     
      </div>
@@ -151,4 +139,16 @@ $('#mobile-nav').on('change', function () {
         </div> 
     </footer>
 </body>
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Main JS file -->
+<script src="../js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$('#mobile-nav').on('change', function () {
+
+    //redirect the user to the value of the select element
+    window.location = this.value;
+});
+</script>
 </html>

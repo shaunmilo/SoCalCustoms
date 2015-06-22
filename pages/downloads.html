@@ -18,20 +18,7 @@
     
 <!-- Add fancyBox -->
 <link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
-<!-- Main JS file -->
-<script src="../js/script.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-document.getElementById('mobile-nav').options[0].text = 'Downloads';
-
-$('#mobile-nav').on('change', function () {
-
-    //redirect the user to the value of the select element
-    window.location = this.value;
-});
-</script>
 </head>
 
 <body class="downloads">
@@ -39,6 +26,7 @@ $('#mobile-nav').on('change', function () {
     	<div class="container">
         	<div class="dropdown">
     		<select name="navigation" id="mobile-nav" class="dropdown-select">
+            	<option value="">Where to?</option>
           		<option value="../index.html">Home</option>
           		<option value="about.html">About</option>
           		<option value="features.html">Features</option>
@@ -116,4 +104,16 @@ $('#mobile-nav').on('change', function () {
         </div> 
     </footer>
 </body>
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Main JS file -->
+<script src="../js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$('#mobile-nav').on('change', function () {
+
+    //redirect the user to the value of the select element
+    window.location = this.value;
+});
+</script>
 </html>

@@ -11,25 +11,6 @@
 <link rel="stylesheet" href="../css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/animate.css">
 
-<!-- JQuery Files -->
-<script src="../layerslider/js/jquery.js" type="text/javascript"></script>
-<script src="../js/jquery.slicknav.js"></script>
-
-<!-- Email Security -->
-<script src="../js/spam.js" type="text/javascript"></script>
-
-<!-- Main JS file -->
-<script src="../js/script.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-document.getElementById('mobile-nav').options[0].text = 'Contact';
-
-$('#mobile-nav').on('change', function () {
-
-    //redirect the user to the value of the select element
-    window.location = this.value;
-});
-</script>
 </head>
 
 <body class="contact">
@@ -37,6 +18,7 @@ $('#mobile-nav').on('change', function () {
     	<div class="container">
         	<div class="dropdown">
     		<select name="navigation" id="mobile-nav" class="dropdown-select">
+            	<option value="">Where to?</option>
           		<option value="../index.html">Home</option>
           		<option value="about.html">About</option>
           		<option value="features.html">Features</option>
@@ -130,4 +112,21 @@ $('#mobile-nav').on('change', function () {
     </footer>
 
 </body>
+<!-- JQuery Files -->
+<script src="../layerslider/js/jquery.js" type="text/javascript"></script>
+<script src="../js/jquery.slicknav.js"></script>
+
+<!-- Email Security -->
+<script src="../js/spam.js" type="text/javascript"></script>
+
+<!-- Main JS file -->
+<script src="../js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$('#mobile-nav').on('change', function () {
+
+    //redirect the user to the value of the select element
+    window.location = this.value;
+});
+</script>
 </html>

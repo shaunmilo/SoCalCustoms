@@ -11,26 +11,7 @@
 <link rel="stylesheet" href="../css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/animate.css">
 
-<!-- JQuery Files -->
-<script src="../layerslider/js/jquery.js" type="text/javascript"></script>
-<script src="../js/jquery.slicknav.js"></script>
-    
-<!-- Add fancyBox -->
-<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
-<!-- Main JS file -->
-<script src="../js/script.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-document.getElementById('mobile-nav').options[0].text = 'Shows';
-
-$('#mobile-nav').on('change', function () {
-
-    //redirect the user to the value of the select element
-    window.location = this.value;
-});
-</script>
 </head>
 
 <body class="shows">
@@ -38,7 +19,8 @@ $('#mobile-nav').on('change', function () {
     	<div class="container">
         	<div class="dropdown">
     		<select name="navigation" id="mobile-nav" class="dropdown-select">
-          		<option value="../index.html">Home</option>
+          		<option value="">Where to?</option>
+                <option value="../index.html">Home</option>
           		<option value="about.html">About</option>
           		<option value="features.html">Features</option>
           		<option value="shows.html">Shows</option>
@@ -71,7 +53,6 @@ $('#mobile-nav').on('change', function () {
             <li><a href="https://twitter.com/socalcustoms" target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://instagram.com/socalcustoms" target="_blank" class="icoTwitter" title="Instagram"><i class="fa fa-instagram"></i></a></li>
         </ul>
-    </div>
     </div>
     
     
@@ -296,4 +277,22 @@ $('#mobile-nav').on('change', function () {
         </div> 
     </footer>
 </body>
+<!-- JQuery Files -->
+<script src="../layerslider/js/jquery.js" type="text/javascript"></script>
+<script src="../js/jquery.slicknav.js"></script>
+    
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="../js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="../js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Main JS file -->
+<script src="../js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$('#mobile-nav').on('change', function () {
+
+    //redirect the user to the value of the select element
+    window.location = this.value;
+});
+</script>
 </html>
