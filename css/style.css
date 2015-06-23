@@ -82,7 +82,7 @@ li {
 
 .iconContainer .icons li {
 	position: relative;
-	margin: 10px;
+	margin: 0 10px;
 	line-height: 50px;
 	text-align: center;
 	color: rgba(255,255,255,1.00);
@@ -262,8 +262,6 @@ nav{
 	background: -o-linear-gradient(top, #890000 0%,#be0000 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top, #890000 0%,#be0000 100%); /* IE10+ */
 	background: linear-gradient(to bottom, #890000 0%,#be0000 100%); /* W3C */
-
-
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#890000', endColorstr='#be0000',GradientType=0 ); /* IE6-9 */
 	width: 100%;
 	box-shadow: 0px 0px 1px rgba(0,0,0,0.8);
@@ -305,6 +303,7 @@ nav .active, footer .active {
 .banner-mobile {
 	display: none;
 	border-bottom: 7px solid #414040;
+	height: 204px;
 }
 
 .iconContainer{
@@ -410,7 +409,24 @@ footer{
 	}	
 .mobile-nav{
 	display:none;
+	background: #890000; /* Old browsers */
+	background: -moz-linear-gradient(top, #890000 0%, #be0000 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#890000), color-stop(100%,#be0000)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #890000 0%,#be0000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #890000 0%,#be0000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #890000 0%,#be0000 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #890000 0%,#be0000 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#890000', endColorstr='#be0000',GradientType=0 ); /* IE6-9 */
 }
+
+.galleries h2 {
+	font-size: 32px;
+	height: 100px;
+	vertical-align: middle;
+	position: relative;
+	display: table-cell;
+}
+
 /* ----------------- Layerslider CSS only ---------------------- */	
 #full-slider-wrapper{
 	z-index:0;
@@ -589,10 +605,13 @@ footer{
 	}
 	.mobile-nav{
 		display: inline-block;
+		width: 100%;
+		box-shadow: 0px 0px 1px rgba(0,0,0,0.8);
 	}
 	.container > .dropdown {
   		margin:10px;
   		vertical-align: top;
+  		width: auto;
 	}
 	.container .dropdown #mobile-nav {
 font-family: "AeroMatics";
@@ -635,7 +654,7 @@ font-family: "AeroMatics";
 .dropdown-select {
 	position: relative;
 	width: 130%;
-	padding: 6px 8px 6px 10px;
+	padding: 6px 23px 6px 10px;
 	height: 28px;
 	line-height: 14px;
 	font-size: 20px;
