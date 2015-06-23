@@ -11,7 +11,7 @@ body {
 
 @font-face {
 	font-family: "BadManners";
-	src:url('../fonts/mcf_bad_manners-webfont.ttf');
+	src:url(../fonts/mcf_bad_manners-webfont.ttf);
 	src: url('../fonts/mcf_bad_manners-webfont.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/mcf_bad_manners-webfont.woff') format('woff'),
 	url('../fonts/mcf_bad_manners-webfont.svg#webfont') format('svg');
@@ -20,7 +20,7 @@ body {
 @font-face {
 	font-family: "AeroMatics";
 	src:url(../fonts/aeromaticsdisplayregular-webfont.ttf);
-	src: url('../fonts/aeromaticsdisplayregular-webfont.eot?#iefix') format('embedded-opentype'),
+	src:url('../fonts/aeromaticsdisplayregular-webfont.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/aeromaticsdisplayregular-webfont.woff') format('woff'),
 	url('../fonts/aeromaticsdisplayregular-webfont.svg#webfont') format('svg');
         }
@@ -28,9 +28,6 @@ body {
 @font-face {
 	font-family: "OpenSansReg";
 	src:url(../fonts/opensans-regular-webfont.ttf);
-	src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-	url('../fonts/opensans-regular-webfont.woff') format('woff'),
-	url('../fonts/opensans-regular-webfont.svg#webfont') format('svg');
 }
 
 p {
