@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SoCal Customs Style Guide</title>
+
+	<style>
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			background: #fafafa;
+			width: 1140px;
+			margin: 0 auto;
+			font-family: "OpenSansReg";
+			color: #000;
+			font-size: 14px;
+		}
+
+		@font-face {
+			font-family: "BadManners";
+			src: url(fonts/mcf_bad_manners-webfont.ttf);
+		}
+
+		@font-face {
+			font-family: "AeroMatics";
+			src: url(fonts/AeroMaticsDisplayRegular.ttf);
+		}
+
+		@font-face {
+			font-family: "OpenSansReg";
+			src: url(fonts/OpenSans-Regular.ttf);
+		}
+
+		p {
+			margin: 10px 0;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-family: "AeroMatics";
+			margin: 10px 0;
+		}
+
+		h1 {
+			font-size: 40px;
+			display: inline-block;
+			position: relative;
+			width: 100%;
+		}
+
+		h1:after {
+		  content: "";
+		  display: block;
+		  width: 77%;
+		  background: #c70101;
+		  height: 7px;
+		  position: absolute;
+		  left: 23%;
+		  top: 50%;
+		  margin: 0;
+		}
+
+		h2 {
+			font-size: 32px;
+		}
+
+		h3 {
+			font-size: 24px;
+		}
+
+		h4 {
+			font-size: 18px;
+		}
+
+
+		.font1 {
+			font-family: "BadManners";
+			font-size: 100px;
+		}
+		.font2 {
+			font-family: "AeroMatics";
+			font-size: 48px;
+		}
+		.font3 {
+			font-family: "OpenSansReg";
+			font-size: 48px;
+		}
+
+		.box {
+			width: 100%;
+			padding: 10px;
+			margin: 1em auto;
+			border: 1px solid #c70101;
+			display: inline-block;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.box-title {
+			margin: 0 0 10px;
+			padding: 0 0 10px;
+			width: 100%;
+			border-bottom: 1px solid #c70101;
+			display: inline-block;
+			font-size: 22px;
+		}
+
+		.inner-box {
+			background: #f0f0f0;
+			padding: 10px;
+			margin: 10px 0;
+			display: inline-block;
+			width: 100%;
+		}
+
+		.colors {
+			width: 100%;
+			display: inline-block;
+		}
+
+		.color-box {
+			width: 150px;
+			color: #fff;
+			position: relative;
+			padding: 1em;
+			text-align: center;
+			margin: auto;
+			float: left;
+			margin: 1em;
+			font-size: 18px;
+			box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35)
+		}
+
+		.red {
+			background: #c70101;
+		}
+
+		.dark-red {
+			background: #8c0000;
+		}
+
+		.dark-gray {
+			background: #202020;
+		}
+
+		.gray {
+			background: #414040;
+		}
+
+		.white {
+			background: #fff;
+			color: #000;
+		}
+
+		.button-red {
+			padding: 10px 20px;
+			display: inline-block;
+			border-radius: 7px;
+			box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.35);
+			margin: 1em;
+			text-decoration: none;
+			color: #fff;
+			border: 3px solid #d50303;
+			background: #cb0101; /* Old browsers */
+			background: -moz-linear-gradient(top, #cb0101 0%, #be0000 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb0101), color-stop(100%,#be0000)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #cb0101 0%,#be0000 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #cb0101 0%,#be0000 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #cb0101 0%,#be0000 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #cb0101 0%,#be0000 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb0101', endColorstr='#be0000',GradientType=0 ); /* IE6-9 */
+		}
+
+		.button-red:hover {
+			background: #db0d0d; /* Old browsers */
+			background: -moz-linear-gradient(top, #db0d0d 0%, #cb0101 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#db0d0d), color-stop(100%,#cb0101)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #db0d0d 0%,#cb0101 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #db0d0d 0%,#cb0101 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #db0d0d 0%,#cb0101 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #db0d0d 0%,#cb0101 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db0d0d', endColorstr='#cb0101',GradientType=0 ); /* IE6-9 */
+		}
+
+		.button-gray {
+			padding: 10px 20px;
+			display: inline-block;
+			border-radius: 7px;
+			box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.35);
+			margin: 1em;
+			text-decoration: none;
+			color: #fff;
+			border: 3px solid #555555;
+			background: #515050; /* Old browsers */
+			background: -moz-linear-gradient(top, #515050 0%, #414040 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#515050), color-stop(100%,#414040)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #515050 0%,#414040 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #515050 0%,#414040 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #515050 0%,#414040 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #515050 0%,#414040 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515050', endColorstr='#414040',GradientType=0 ); /* IE6-9 */
+		}
+
+		.button-gray:hover {
+			background: #5b5a5a; /* Old browsers */
+			background: -moz-linear-gradient(top, #5b5a5a 0%, #515050 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5b5a5a), color-stop(100%,#515050)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #5b5a5a 0%,#515050 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #5b5a5a 0%,#515050 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #5b5a5a 0%,#515050 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #5b5a5a 0%,#515050 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5a5a', endColorstr='#515050',GradientType=0 ); /* IE6-9 */
+		}
+
+		.content-box {
+			background: #3a3a3a; /* Old browsers */
+			background: -moz-linear-gradient(top, #3a3a3a 0%, #302f2f 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a3a3a), color-stop(100%,#302f2f)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #3a3a3a 0%,#302f2f 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #3a3a3a 0%,#302f2f 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #3a3a3a 0%,#302f2f 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #3a3a3a 0%,#302f2f 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#302f2f',GradientType=0 ); /* IE6-9 */
+			padding: 1em;
+			color: #fff;
+			border-radius: 7px;
+			margin: 1em 0;
+			box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+		}
+
+		.icon-box {
+			padding: 10px;
+			text-align: center;
+			margin: 1em 0;
+			width: 33%;
+			float: left;
+		}
+
+
+	</style>
+
+</head>
+<body>
+
+	<h2 style="font-family: 'OpenSansReg'; text-align: center;">SoCal Customs | Website Style Guide</h2>
+
+	<div class="box logo">
+
+		<span class="box-title">Site Logo</span>
+
+		<div style="text-align: center; margin: 3em 0; display: inline-block; width: 100%;">
+
+			<div style="width: 50%; float: left;">
+
+				<img src="socal-logo-bw.png" />
+				<br />
+				socal-logo-bw.png
+
+			</div>
+
+			<div style="width: 50%; float: left">
+
+				<img src="socal-logo-color.png" />
+				<br />
+				socal-logo-color.png
+
+			</div>
+
+		</div>
+
+		<div class="inner-box">
+
+			<strong>Implementation</strong><br />
+			<p>Wherever site logo is used, ensure complete visibility of the "SoCal Customs.com" text. Be respectful to any client restrictions on branding/logo use. Typically, the logo should only be incorporated in the site header, footer or as a photo watermark. Additional restrictions may apply.</p>
+
+		</div>
+
+	</div>
+
+	<div class="headings box">
+
+		<span class="box-title">Headings &amp; Text</span>
+
+		<h1>Heading 1 - 40px</h1>
+		<h2>Heading 2 - 32px</h2>
+		<h3>Heading 3 - 24px</h3>
+		<h4>Heading 4 - 18px</h4>
+
+		<span>Body Text:</span><br />
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque laborum officiis deleniti ad animi corporis cupiditate, eum, repellendus. Architecto id corporis repellat deleniti cupiditate laudantium aut, amet. Obcaecati, autem sequi!</p>
+
+		<div class="inner-box">
+			<strong>Implementation</strong>
+
+			<p><strong>Headers</strong><br />
+			May be used for sectioned areas of content for better clarification and structure. "H1" headings must be used as a top-level heading for each page section while all other headings follow standard heirarchy based on level of importance.</p>
+			<strong>Body Text</strong><br />
+			14px font size for main content text. Use 11px for things such as sub-text and caption boxes.</p>
+
+		</div>
+
+	</div>
+
+	<div class="box colors">
+
+		<span class="box-title">Colors</span>
+
+		<div class="color-box red">.red<p>Hex Value:<br />#c70101</p></div>
+		<div class="color-box dark-red">.dark-red<p>Hex Value:<br />#8c0000</p></div>
+		<div class="color-box dark-gray">.dark-gray<p>Hex Value:<br />#202020</p></div>
+		<div class="color-box gray">.gray<p>Hex Value:<br />#414040</p></div>
+		<div class="color-box white">.white<p>Hex Value:<br />#ffffff</p></div>
+
+		<div class="inner-box">
+			<strong>Implementation</strong>
+			<p>The above background colors must be integrated with all UI elements as it relates to the overall design layout. Utilize the specified CSS classes as opposed to creating additional color styles during development. For each red and gray backgrounds, the font color must be white (#ffffff) and when using a white background, the font color must be black (#000000). Aside from specific visual elements such as content boxes or navigation menus, all background colors must remain solid and contain no gradients or changes to transparency.</p>
+		</div>
+
+	</div>
+
+	<div class="box fonts">
+
+		<span class="box-title">Typography</span>
+
+		<span class="font1">MCf Bad Manners</span> (Logo)
+		<br />
+		<span class="font2">Aero Matics Display Regular</span> (Headings)
+		<br />
+		<span class="font3">OpenSans Regular</span> (Body text, buttons, captions, forms etc)
+
+		<div class="inner-box">
+			<strong>Implementation</strong>
+			<p>Logo font must only be integrated in the banner section and other areas of the site where the client's company logo is presented. For inner content headings and navigation links, use the "Aero Matics" font style. For body text, information, captions, forms, buttons and all other simplified text, utilize the "OpenSans Regular" font for readability.</p>
+		</div>
+
+	</div>
+
+	<div class="box ui-elements">
+
+		<span class="box-title">UI Elements</span>
+
+		<a href="#" class="button-red">.button-red</a>
+		<a href="#" class="button-gray">.button-gray</a>
+
+		<div class="content-box">
+
+			<h3>.content-box</h3>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facilis vitae inventore quam, aliquam tempore, harum id maxime deserunt consequatur expedita quae odit aspernatur fuga numquam neque iure culpa provident.</p>
+
+		</div>
+
+		<div class="icon-box">
+
+			<img src="icon-facebook.png" />
+			<br />
+			img/icon-facebook.png
+
+		</div>
+
+		<div class="icon-box">
+
+			<img src="icon-twitter.png" />
+			<br />
+			img/icon-twitter.png
+
+		</div>
+
+		<div class="icon-box">
+
+			<img src="icon-instagram.png" />
+			<br />
+			img/icon-instagram.png
+
+		</div>
+
+		<div class="inner-box">
+			<strong>Implementation</strong>
+			<p><strong>UI elements</strong><br />
+			May be used sparingly throughout the site and should not need to be changed or otherwise formatted. Utilize the specified CSS classes within the HTML document in order to integrate.</p>
+
+			<p><strong>Buttons</strong><br />
+			Button classes should be used for all "call-to-action" (e.g. "Learn More") links and form submit buttons.</p>
+
+			<p><strong>Iconography</strong><br />
+			All icons must follow the "icon-[name].png" file naming convention. Social media icons may be integrated ONLY in the main site header, contact page, or site footer. Be sure to link the social icon &lt;img&gt; elements to their respective social media pages.</p>
+		</div>
+
+	</div>
+	
+</body>
+</html>
